@@ -8,6 +8,10 @@ body {
     font-family: "Montserrat", "arial";
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -492,7 +496,7 @@ header {
     border-radius: 30px;
     border: 1px solid #FFFFFF;
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     background: transparent;
     width: 288px;
 }
@@ -616,9 +620,8 @@ header {
 }
 .product-box{
     display:flex;
+    flex-direction: column;
     padding-top: 64px;
-    flex-wrap: wrap;
-  
 }
 .product-box__title{
     font-weight: 600;
@@ -634,31 +637,25 @@ header {
 }
 
 .product{
+    position: relative;
     width: 378px;
     display: flex;
     flex-direction: column;
 }
 
 .product__img{
-    position: relative;
     width: 100%;
     margin-bottom: 8px;
 }
 
 .product__png{
+    position: absolute;
+    top: 13px;
+    right: 12px;
     display: flex;
-    position:absolute;
+    gap: 21px;
 }
 
-.product__icon{
-top: 13px;
-gap: 21px;
-align-self: end;
-top:13px;
-padding-right: 12px;
-left:300px;
-position:relative;
-}
 
 .product__title{
     font-weight: 500;
@@ -707,7 +704,7 @@ position:relative;
 
 .catalog-box{
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 72px;
 }
 
@@ -727,6 +724,7 @@ position:relative;
 }
 
 .catalog{
+    position: relative;
     width: 378px;
     display: flex;
     flex-direction: column;

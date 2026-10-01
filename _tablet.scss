@@ -1,7 +1,7 @@
 @media (max-width: 1024px) {
     .center {
-        padding-left: calc(50% - 393px);
-        padding-right: calc(50% - 393px);
+        padding-left: max(calc(50% - 393px));
+        padding-right: max(calc(50% - 393px));
     }
 
     .for {
@@ -62,7 +62,8 @@
         padding-right: 24px;
     }
 
-    .product {
+    .product,
+    .catalog {
         width: 345px;
     }
 }
