@@ -813,10 +813,12 @@ header {
     position: relative;
     align-self: flex-start;
     padding-top: 32px;
+    flex-shrink:0;
 }
 
 .footer__content{
-    width: 100%;
+    width: 792px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
